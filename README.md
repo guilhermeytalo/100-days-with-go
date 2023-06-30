@@ -11,4 +11,5 @@ or not i don't know
     - [x] Writing tests
     - [x] Go doc
     - [x] Hello, YOU
-    - [ ] Back to source control
+    - [x] Back to source control
+    - [ ] Discipline
