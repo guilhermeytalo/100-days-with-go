@@ -12,4 +12,11 @@ or not i don't know
     - [x] Go doc
     - [x] Hello, YOU
     - [x] Back to source control
-    - [ ] Discipline
+    - [x] Discipline
+    - [x] Keep going! More requirements
+    - [ ] French
+    - [ ] Switch
+    - [ ] one...last...refactor?
+    - [ ] Wrapping up
+    - [ ] Some of Go's syntax around
+    - [ ] The TDD process and why the steps are important
