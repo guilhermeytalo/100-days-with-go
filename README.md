@@ -20,3 +20,4 @@ or not i don't know
     - [ ] Wrapping up
     - [ ] Some of Go's syntax around
     - [ ] The TDD process and why the steps are important
+  
