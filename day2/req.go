@@ -6,7 +6,7 @@ const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 const spanish = "Spanish"
 
-func Hello(name string, language string) string {
+func HelloReq(name string, language string) string {
 	if name == "" {
 		name = "World"
 	}
@@ -19,5 +19,5 @@ func Hello(name string, language string) string {
 }
 
 func main() {
-	fmt.Println(Hello(""))
+	fmt.Println(HelloReq("", "Spanish"))
 }
