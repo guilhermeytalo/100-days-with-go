@@ -4,7 +4,7 @@ import "testing"
 
 func TestReq(t *testing.T) {
 	t.Run("Saying hello to people", func(t *testing.T) {
-		got := HelloReq("Chris")
+		got := HelloReq("Chris", "")
 		want := "Hello, Chris"
 
 		if got != want {
@@ -14,8 +14,8 @@ func TestReq(t *testing.T) {
 
 	t.Run("Say 'Hello, Wolrd' when an empty string is supplied",
 		func(t *testing.T) {
-			got := HelloReq("")
-			want := "Hello , World"
+			got := HelloReq("", "")
+			want := "Hello, World"
 
 			if got != want {
 				t.Errorf("got %q want %q", got, want)
@@ -24,7 +24,14 @@ func TestReq(t *testing.T) {
 
 	t.Run("in Spanish", func(t *testing.T) {
 		got := HelloReq("Elodie", "Spanish")
-		want := "Hello, Elodie"
+		want := "Hola, Elodie"
 		assertCorrectMessage(t, got, want)
 	})
+}
+
+func assertCorrectMessage(t testing.TB, got, want string) {
+	t.Helper()
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
 }
